@@ -11,9 +11,9 @@ scp-jump() {
 	# defaults set to use parnters healthare ssh and erisone server, reset
 	#		defaults as needed.
 	#
-	# default: 	jump=partners
+	# defaults: 					jump=partners
 	#						sshlogon=erisone
-	#						download=${PWD}
+	#						local=${PWD}
 	#						send=1
 	files=()
 	send=1
