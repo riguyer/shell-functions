@@ -9,7 +9,7 @@
 
 base_dir=${PWD} # script works from the assumption this is a parent directory containing Cell Ranger output from each flow cell
 output_dir=${base_dir}/combined
-run_dirs=(Run1/200729_A00794_0226_BHMVMWDMXX Run2/200721_A00794_0218_BHNKKYDMXX)
+run_dirs=(Run1 Run2) # no limit to number of runs you can include
 lsf_dir=${base_dir}/scripts
 
 if [[ ! -d ${output_dir} ]]; then
