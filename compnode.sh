@@ -1,7 +1,7 @@
 compnode() {
-	# launch interactive command line session on Partners RC compute node
+	# launch interactive command line session on MGB RC compute node
 	# (c) Richard A. Guyer, MD, PhD Feb 24, Jan2020
-	#	riguyer@gmail.com rguyer@partners.org
+	# riguyer@gmail.com rguyer@mgh.harvard.edu
 	#
 	# To use, copy this function into ~/.bashrc
 	#
