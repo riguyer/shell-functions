@@ -2,3 +2,5 @@ This repository contains shell functions and scripts I have created to make my l
 
 NB: many functions are intended for use on the Partners HealthCare Research Computing ERISone cluster. Compatability in other contexts is not assured, and 
 in fact is unlikely without some tweaking.
+
+Folders contain scripts designed to run together for a particular purpose.
