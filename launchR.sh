@@ -1,7 +1,7 @@
 launchR() {
 	# launch R from a command line compute node on ERISone cluster
-	# (c) Richard A. Guyer, MD, PhD Feb 11, Jan2020
-	#	riguyer@gmail.com rguyer@partners.org
+	# (c) Richard A. Guyer, MD, PhD Feb 11
+	# riguyer@gmail.com rguyer@partners.org
 	#
 	# this function will launch the default R instance within the specified
 	#		conda environment
@@ -31,9 +31,9 @@ launchR() {
 			echo 'Usage: launchR <options>'
 			echo parameters:
 			echo '	-h | --help:			show this message'
-			echo '	-m | --mem:				memory required'
+			echo '	-m | --mem:			memory required'
 			echo '	-c | --cores:			cores required'
-			echo '	-e | --env:				conda environment (if other than default)'
+			echo '	-e | --env:			conda environment (if other than default)'
 			echo '  '
 			kill -INT $$
 	    	;;
