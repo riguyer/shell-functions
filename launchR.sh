@@ -1,10 +1,10 @@
 launchR() {
 	# launch R from a command line compute node on ERISone cluster
 	# (c) Richard A. Guyer, MD, PhD Feb 11
-	# riguyer@gmail.com rguyer@partners.org
+	# riguyer@gmail.com rguyer@mgh.harvard.edu
 	#
 	# this function will launch the default R instance within the specified
-	#		conda environment
+	# conda environment
 	#
 	# To use, copy this function into ~/.bashrc
 	#
@@ -46,7 +46,7 @@ launchR() {
 	echo '   '
 
 	bsub -Ip \
-			-R "rusage[mem=${mem_needed}]" \
-			-n ${cores_needed} \
-			"module load anaconda; source activate ${conda_env}; R;"
+		-R "rusage[mem=${mem_needed}]" \
+		-n ${cores_needed} \
+		"module load anaconda; source activate ${conda_env}; R;"
 }
