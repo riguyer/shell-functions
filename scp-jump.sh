@@ -1,25 +1,25 @@
 scp-jump() {
 	# copy files from local working directory to remote servers
-	#		by jumping an ssh connection. Can download with -r option.
+	# by jumping an ssh connection. Can download with -r option.
 	#
-	# (c) Richard A. Guyer, MD, PhD Feb 12, Jan2020
-	#	riguyer@gmail.com rguyer@partners.org
+	# (c) Richard A. Guyer, MD, PhD Feb 12, 2020
+	# riguyer@gmail.com rguyer@mgh.harvard.edu
 	#
 	# usage: scp-jump <options> <remote dir> [FILES]
 	#
 	# ssh connection must already be open to host you will jump through.
 	# defaults set to use parnters healthare ssh and erisone server, reset
-	#		defaults as needed.
+	# defaults as needed.
 	#
-	# defaults: 					jump=partners
-	#						sshlogon=erisone
-	#						local=${PWD}
-	#						send=1
+	# defaults: 			jump=partners
+	#				sshlogon=erisone
+	#				local=${PWD}
+	#				send=1
 	files=()
 	send=1
 	jump=partners
 	sshlogin=erisone
-	local=.
+	local=${PWD}
 
 	while [[ "$1" =~ ^- ]]; do case $1 in
 		-r | --receive )
